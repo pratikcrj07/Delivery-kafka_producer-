@@ -20,8 +20,12 @@ public class kafkaService {
 
     public boolean updateLocation(String Location) {
 
-        this.kafkaTemplate.send(AppConstants.LOCATION_TOPIC_NAME, Location);
-        this.logger.info("message produced");
+
+
+            this.kafkaTemplate.send(AppConstants.LOCATION_TOPIC_NAME, Location);
+
+
+
 
 return true;
 
